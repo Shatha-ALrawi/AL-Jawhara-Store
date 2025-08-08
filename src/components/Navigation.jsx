@@ -5,7 +5,7 @@ import { useAuth } from "../context/AuthContext";
 import { useTheme } from '../context/ThemeContext';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
-import DiamondIcon from '@mui/icons-material/Diamond'; // ✅ Import the new icon
+import DiamondIcon from '@mui/icons-material/Diamond'; 
 import { useState, useEffect } from 'react';
 
 const Navigation = () => {
