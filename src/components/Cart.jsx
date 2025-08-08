@@ -1,4 +1,3 @@
-// src/components/Cart.jsx
 import { useState, useEffect } from 'react';
 import {
   Container,

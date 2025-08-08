@@ -1,4 +1,3 @@
-// src/components/Products.jsx
 import { useState, useEffect } from 'react';
 import {
   Container, Grid, Card, CardContent, CardMedia, Typography, Button,

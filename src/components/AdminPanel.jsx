@@ -1,4 +1,3 @@
-// src/components/AdminPanel.jsx
 import { useState, useEffect } from 'react';
 import {
   Box, Container, Typography, Button,
@@ -15,8 +14,6 @@ const AdminPanel = () => {
     const fetchProducts = async () => {
       try {
         const res = await api.get('/products');
-        // ✅ الخطأ: كان setProducts(res.data)
-        // ✅ التصحيح: يجب أن يكون setProducts(res.data.data.data) لكي تحصل على مصفوفة المنتجات الصحيحة.
         setProducts(res.data.data.data);
       } catch (err) {
         console.error('Error fetching products:', err);
@@ -50,14 +47,12 @@ const AdminPanel = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {/* ✅ تأكد من أن products مصفوفة قبل عمل map */}
+            {}
             {products.length > 0 ? (
               products.map((product) => (
                 <TableRow key={product.id}>
                   <TableCell>
                     <img
-                      // ✅ الخطأ: كان product.image
-                      // ✅ التصحيح: يجب الوصول للصورة من مصفوفة الصور
                       src={product.productImages && product.productImages.length > 0 ? product.productImages[0].url : '/no-image.png'}
                       alt={product.name}
                       width="50"

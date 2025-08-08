@@ -1,4 +1,3 @@
-// src/App.jsx
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { ThemeProvider as MuiThemeProvider, createTheme, Box, CssBaseline } from "@mui/material";
 import { useTheme } from "./context/ThemeContext";

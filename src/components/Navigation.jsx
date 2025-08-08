@@ -1,4 +1,3 @@
-// src/components/Navigation.jsx
 import { useNavigate, Link } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Button, Box, Badge, IconButton } from "@mui/material";
 import { ShoppingCart } from "@mui/icons-material";
@@ -38,7 +37,7 @@ const Navigation = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        {/* ✅ New store icon and name */}
+        {}
         <Box sx={{ display: 'flex', alignItems: 'center', mr: 2 }}>
           <IconButton color="inherit" component={Link} to="/home">
             <DiamondIcon />
@@ -50,7 +49,7 @@ const Navigation = () => {
           </Typography>
         </Box>
 
-        <Box sx={{ flexGrow: 1 }}></Box> {/* Spacer for alignment */}
+        <Box sx={{ flexGrow: 1 }}></Box> {}
         
         <Button color="inherit" component={Link} to="/products" sx={{ mr: 2 }}>
           Products

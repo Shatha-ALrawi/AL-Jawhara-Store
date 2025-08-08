@@ -1,4 +1,3 @@
-// src/components/ProductDetails.jsx
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import {
@@ -36,7 +35,7 @@ const ProductDetails = () => {
   }, [id]);
 
   const addToCart = () => {
-    if (!product) return; // حماية في حال كان المنتج غير موجود
+    if (!product) return; 
 
     const cart = JSON.parse(localStorage.getItem('cart') || '[]');
     const existingItem = cart.find((item) => item.id === product.id);

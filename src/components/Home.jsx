@@ -1,4 +1,3 @@
-// src/components/Home.jsx
 import { Container, Typography, Box, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
